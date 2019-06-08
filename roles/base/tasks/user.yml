@@ -13,7 +13,7 @@
     password: "{{ user_password|password_hash('sha512') }}"
     shell: "{{ user.shell }}"
     update_password: on_create
-    uid: "{{ user.uid | default(omit) }}"
+    uid: "{{ user.uid }}"
     groups: uucp
     append: yes
   tags:
