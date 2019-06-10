@@ -1,8 +1,7 @@
 ---
-- name: Install srandrd
-  aur: name=srandrd
+- name: Install yay
+  aur: name=yay use=makepkg
   become: yes
   become_user: "{{ user.name }}"
   tags:
     - aur
-    - srandrd

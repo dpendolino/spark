@@ -80,8 +80,9 @@
 - name: Install tor-browser-en
   aur:
     name: tor-browser-en
-    user: "{{ user.name }}"
     skip_pgp: yes
+  become: yes
+  become_user: "{{ user.name }}"
   tags:
     - tor-browser
     - aur

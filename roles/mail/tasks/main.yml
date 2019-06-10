@@ -27,7 +27,9 @@
     - firejail
 
 - name: Install urlview
-  aur: name=urlview user={{ user.name }}
+  aur: name=urlview
+  become: yes
+  become_user: "{{ user.name }}"
   tags:
     - aur
 
@@ -37,7 +39,8 @@
 - name: Install mutt-ics
   aur:
     name: mutt-ics
-    user: "{{ user.name }}"
+  become: yes
+  become_user: "{{ user.name }}"
   tags:
     - aur
 

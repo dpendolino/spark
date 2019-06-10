@@ -30,7 +30,9 @@
   pacman: name=sshuttle state=present
 
 - name: Install pdsh
-  aur: name=pdsh user={{ user.name }}
+  aur: name=pdsh
+  become: yes
+  become_user: "{{ user.name }}"
   tags:
     - aur
 

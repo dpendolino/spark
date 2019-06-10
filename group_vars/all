@@ -16,6 +16,7 @@ dotfiles:
 
 aur:
     dir: aur
+    use: yay
     packages:
         - yay
         - downgrade

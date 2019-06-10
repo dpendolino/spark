@@ -29,8 +29,9 @@
 - name: Install Metadata Anonymisation Toolkit
   aur:
     name: mat2
-    user: "{{ user.name }}"
     skip_pgp: yes
+  become: yes
+  become_user: "{{ user.name }}"
   tags:
     - aur
     - mat
