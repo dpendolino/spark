@@ -1,19 +1,18 @@
 user:
-    name: pigmonkey
-    uid: 1000
-    group: pigmonkey
-    shell: /usr/bin/zsh
-    email:  peter@havenaut.net
+    name: dpendolino
+    uid: 1001
+    group: dpendolino
+    shell: /usr/bin/bash
+    email:  dpendolino@gmail.com
     log:
         dir: log
         rotate: 8
 
-hostname: nous
+hostname: archlinux
 
 dotfiles:
-    url: git@github.com:pigmonkey/dotfiles.git
-    destination: projects/dotfiles
-    rcup_flags: -fx README.md
+    url: git@github.com:dpendolino/dotfiles.git
+    destination: .dotfiles
 
 aur:
     dir: aur
@@ -56,7 +55,7 @@ network:
         - faeec88c-79ec-4840-ab25-ea356af8a81b
 
 editors:
-    - gvim
+    - neovim
 
 video_drivers:
     - libva-intel-driver
