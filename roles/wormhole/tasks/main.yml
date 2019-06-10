@@ -6,7 +6,8 @@
       - python-spake2
       - python-txtorcon
       - magic-wormhole
-    user: "{{ user.name }}"
+  become: yes
+  become_user: "{{ user.name }}"
   tags:
     - aur
 

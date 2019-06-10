@@ -2,7 +2,8 @@
 - name: Install GOESImage
   aur:
     name: goesimage
-    user: "{{ user.name }}"
+  become: yes
+  become_user: "{{ user.name }}"
   tags:
     - aur
 

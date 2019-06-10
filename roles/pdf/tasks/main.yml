@@ -74,7 +74,8 @@
       - python-pikepdf
       - python-ruffus
       - ocrmypdf
-    user: "{{ user.name }}"
+  become: yes
+  become_user: "{{ user.name }}"
   tags:
     - ocrmypdf
     - aur

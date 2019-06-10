@@ -23,6 +23,7 @@
   aur:
     name:
       - nomad
-    user: "{{ user.name }}"
+  become: yes
+  become_user: "{{ user.name }}"
   tags:
     - aur

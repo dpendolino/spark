@@ -6,11 +6,14 @@
       - flxmlrpc
       - fldigi
       - flrig
-    user: "{{ user.name }}"
+  become: yes
+  become_user: "{{ user.name }}"
   tags:
     - aur
 
 - name: Install wsjtx
-  aur: name=wsjtx user={{ user.name }}
+  become: yes
+  become_user: "{{ user.name }}"
+  aur: name=wsjtx
   tags:
     - aur
