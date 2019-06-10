@@ -78,6 +78,7 @@
     name:
       - python-dateparser
       - python-undertime
-    user: "{{ user.name }}"
+  become: yes
+  become_user: "{{ user.name }}"
   tags:
     - aur

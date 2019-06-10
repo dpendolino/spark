@@ -40,7 +40,9 @@
     - lesspipe
 
 - name: Install geteltorito
-  aur: name=geteltorito user={{ user.name }}
+  aur: name=geteltorito
+  become: yes
+  become_user: "{{ user.name }}"
   tags:
     - aur
     - geteltorito
