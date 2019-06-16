@@ -1,6 +1,6 @@
 user:
     name: dpendolino
-    uid: 1001
+    uid: 1000
     group: dpendolino
     shell: /usr/bin/bash
     email:  dpendolino@gmail.com
@@ -279,7 +279,6 @@ base_fonts:
     - ttf-ubuntu-font-family
 
 aur_fonts:
-    - ttf-courier-prime
     - ttf-heuristica
     - ttf-merriweather
     - ttf-merriweather-sans
