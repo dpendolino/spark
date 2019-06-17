@@ -1,19 +1,9 @@
 ---
-- name: Create user group
-  group:
-    name: "{{ user.group }}"
-    state: present
-  tags:
-    - user
-
 - name: Create user and assign to group
   user:
     name: "{{ user.name }}"
-    group: "{{ user.group }}"
-    password: "{{ user.name|password_hash('sha512') }}"
-    shell: "{{ user.shell }}"
+    password: "{{ user_password|password_hash('sha512') }}"
     update_password: on_create
-    uid: "{{ user.uid }}"
     groups: uucp, wheel
     append: yes
   tags:
