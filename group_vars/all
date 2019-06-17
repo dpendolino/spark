@@ -25,6 +25,10 @@ aur:
         - myrepos
         - ctmg
         - termdown-git
+        - kitty
+        - termite
+        - fzf
+        - fasd
 
 ssh:
     port: 22
@@ -286,6 +290,7 @@ aur_fonts:
     - ttf-quintessential
     - ttf-signika
     - ttf-symbola
+    - ttf-impallari-dosis
 
 syncthing:
     run_on: trusted
