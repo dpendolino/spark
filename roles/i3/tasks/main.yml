@@ -5,13 +5,19 @@
     user: dpendolino
     use: yay
 
+- name: Install Polybar
+  aur:
+    name: polybar
+    user: dpendolino
+    use: yay
+
+
 - name: Install i3 related apps
   pacman:
     name:
       - i3blocks
       - i3lock
       - i3status
-      - polybar
     state: present
 
 - name: Install py3status
