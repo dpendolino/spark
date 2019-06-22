@@ -1,0 +1,7 @@
+---
+- name: Install Remaining Packages
+  aur:
+    use: yay
+    name: "{{ packages }}"
+  become: yes
+  become_user: "{{ user.name }}"

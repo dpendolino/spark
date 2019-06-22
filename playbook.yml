@@ -78,6 +78,7 @@
     - { role: syncthing, tags: ['syncthing'], when: "syncthing is defined" }
     - { role: mirrorlist, tags: ['mirrorlist'], when: "mirrorlist is defined" }
     - { role: logitech, tags: ['logitech'] }
+    - { role: packages, tags: ['packages'] }
   vars_prompt:
     - name: user_password
       prompt: "Enter desired user password"

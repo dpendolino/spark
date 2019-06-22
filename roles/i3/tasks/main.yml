@@ -8,17 +8,22 @@
 - name: Install Polybar
   aur:
     name: polybar
-    user: dpendolino
     use: yay
+  become: yes
+  become_user: dpendolino
 
 
 - name: Install i3 related apps
-  pacman:
+  aur:
     name:
       - i3blocks
       - i3lock
       - i3status
+      - i3-layout-manager-git
+      - i3-workspace-groups
+      - i3-workspace-names
     state: present
+    use: yay
 
 - name: Install py3status
   pacman: name=py3status state=present
