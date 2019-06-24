@@ -30,6 +30,7 @@
 - name: Install AUR base packages
   aur:
     name: "{{ aur.packages }}"
+    use: "{{ aur.use }}"
   become: yes
   become_user: "{{ user.name }}"
   tags:
