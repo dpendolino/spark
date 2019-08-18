@@ -23,6 +23,6 @@
 - include: shell.yml
 - include: user.yml
 - include: sudo.yml
+- include: yay.yml
 - include: packages.yml
 - include: journal.yml
-- include: yay.yml
