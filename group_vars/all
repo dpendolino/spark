@@ -283,7 +283,6 @@ base_fonts:
     - ttf-ubuntu-font-family
 
 aur_fonts:
-    - ttf-aboriginal-sans
     - ttf-bitstream-vera
     - ttf-croscore
     - ttf-crosextra
