@@ -23,7 +23,6 @@
       - i3-layout-manager-git
       - i3-workspace-groups
       - i3-workspace-names
-    state: present
     use: yay
   become: yes
   become_user: dpendolino
