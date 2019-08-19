@@ -1,4 +1,9 @@
 ---
+- name: Install Yay dependencies
+  pacman: name=base-devel
+  tags:
+    - aur
+
 - name: Install yay
   aur: name=yay use=makepkg
   become: yes
