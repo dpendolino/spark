@@ -13,13 +13,13 @@
   file: path=/usr/share/backgrounds state=directory
 
 - name: Push LightDM greeter background
-  copy: src=antergos-wallpaper.jpg dest=/usr/share/backgrounds/antergos-wallpaper.jpg
+  copy: src=antergos-wallpaper.png dest=/usr/share/backgrounds/antergos-wallpaper.png
 
 - name: Specify LightDM greeter background
   lineinfile: dest=/etc/lightdm/lightdm-gtk-greeter.conf
               regexp="^background="
               state=present
-              line="background=/usr/share/backgrounds/antergos-wallpaper.jpg"
+              line="background=/usr/share/backgrounds/antergos-wallpaper.png"
 
 - name: Hide user images
   lineinfile: dest=/etc/lightdm/lightdm-gtk-greeter.conf
