@@ -2,8 +2,9 @@
 - name: Install I3-gaps
   aur:
     name: i3-gaps
-    user: dpendolino
     use: yay
+  become: yes
+  become_user: dpendolino
 
 - name: Install Polybar
   aur:
@@ -24,6 +25,8 @@
       - i3-workspace-names
     state: present
     use: yay
+  become: yes
+  become_user: dpendolino
 
 - name: Install py3status
   pacman: name=py3status state=present
