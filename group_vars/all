@@ -107,7 +107,7 @@ browser_choices:
     - firefox -P work
     - firewarden chromium
     - firewarden -c qutebrowser
-    - tor-browser-en
+    - tor-browser
     - play
     - qcode
     - "| xclip -selection c"
