@@ -318,9 +318,6 @@ packages:
   - archey3
   - archey4
   - archiso
-  - arm-none-eabi-binutils
-  - arm-none-eabi-gcc
-  - arm-none-eabi-newlib
   - atom
   - atop
   - autoconf
@@ -479,7 +476,6 @@ packages:
   - jdupes
   - jfsutils
   - jnettop
-  - joplin
   - keepassxc
   - kubectl
   - less
@@ -514,7 +510,6 @@ packages:
   - meld
   - mesa
   - mesa-vdpau
-  - meteor
   - mlocate
   - modemmanager
   - modprobed-db
@@ -524,9 +519,6 @@ packages:
   - nautilus
   - ncdu
   - neovim
-  - neovim-gtk
-  - neovim-qt
-  - neovim-symlinks
   - net-tools
   - netctl
   - network-manager-applet
@@ -550,8 +542,6 @@ packages:
   - nvme-cli
   - openssh
   - os-prober
-  - pacman
-  - page-git
   - pandoc
   - pandoc-citeproc
   - pandoc-crossref
@@ -624,7 +614,7 @@ packages:
   - rsync
   - ruby-rails
   - ruby-rdoc
-  - rust
+  - rustup
   - s-nail
   - screenfetch
   - seahorse
