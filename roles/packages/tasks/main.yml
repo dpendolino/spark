@@ -2,6 +2,7 @@
 - name: Install Remaining Packages
   aur:
     use: yay
-    name: "{{ packages }}"
+    name: "{{ item }}"
   become: yes
   become_user: "{{ user.name }}"
+  loop: "{{ packages }}"
