@@ -7,7 +7,7 @@
 
 - name: Enable and start OpenSSH
   service: name=sshd.service enabled=yes state=started
-  when: ssh.enable_sshd == True
+  when: ssh.enable_sshd
 
 - name: Install sshfs
   pacman: name=sshfs state=present
