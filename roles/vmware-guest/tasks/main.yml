@@ -1,0 +1,17 @@
+---
+- name: Install VMware Tools
+  aur:
+    use: yay
+    name: "open-vm-tools"
+  become: yes
+  become_user: "{{ user.name }}"
+  tags:
+    - virtualization-guest
+
+- name: Enable vmtoolds.service
+  service:
+    name: vmtoolsd
+    enabled: true
+    state: started
+  tags:
+    - virtualization-guest

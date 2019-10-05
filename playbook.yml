@@ -3,6 +3,7 @@
   become: yes
   roles:
     - { role: base, tags: ['base'] }
+    - { role: vmware-guest, tags: ['virtualization-guest'], when: "'VMware' in ansible_virtualization_type" }
     - { role: gnupg, tags: ['gnupg'] }
     - { role: cron, tags: ['cron'] }
     - { role: microcode, tags: ['microcode'], when: "'GenuineIntel' in ansible_processor" }
