@@ -4,7 +4,8 @@
     repo: "{{ dotfiles.url }}"
     dest: /home/{{ user.name }}/{{ dotfiles.destination }}
     accept_hostkey: yes
-    update: no key_file="/home/{{ user.name }}/.ssh/id_rsa"
+    update: no
+    key_file: "/home/{{ user.name }}/.ssh/id_rsa"
     version: "{{ hostname | default('master') }}"
   when: dotfiles is defined
   become: yes
