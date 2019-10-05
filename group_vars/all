@@ -375,7 +375,7 @@ packages:
   - dnsmasq
   - docker
   - docker-compose
-  - dolphin-emu-git
+  - dolphin-emu
   - dos2unix
   - dosfstools
   - downgrade
@@ -450,6 +450,8 @@ packages:
   - gst-plugins-good
   - gst-plugins-ugly
   - gstreamer-vaapi
+  - gtkmm
+  - gtk2
   - gulp
   - gvfs-google
   - gvfs-gphoto2
@@ -538,7 +540,6 @@ packages:
   - ntfs-3g
   - numix-frost-themes
   - numix-icon-theme
-  - numix-icon-theme-square
   - nvme-cli
   - openssh
   - os-prober
@@ -575,9 +576,6 @@ packages:
   - powershell-bin
   - procps-ng
   - psmisc
-  - pulseaudio
-  - pulseaudio-alsa
-  - pulseaudio-bluetooth
   - pv
   - pyinstaller
   - python-click
@@ -593,14 +591,6 @@ packages:
   - python-pytz
   - python-urwid
   - python-vdf
-  - python2-click
-  - python2-flake8
-  - python2-gnomekeyring
-  - python2-llfuse
-  - python2-pip
-  - python2-pycodestyle
-  - python2-pyflakes
-  - python2-tox
   - qt5-styleplugins
   - qt5ct
   - rdesktop
@@ -674,7 +664,6 @@ packages:
   - wget
   - which
   - whois
-  - wireguard-dkms
   - wireguard-tools
   - wireless_tools
   - wireshark-qt
@@ -687,6 +676,7 @@ packages:
   - xf86-input-libinput
   - xf86-video-fbdev
   - xf86-video-vesa
+  - xorg-drivers
   - xfsprogs
   - xorg-bdftopcf
   - xorg-font-util
