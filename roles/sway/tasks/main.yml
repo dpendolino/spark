@@ -1,0 +1,35 @@
+---
+- name: Install sway-git
+  aur:
+    name: sway-git
+    use: yay
+  become: yes
+  become_user: dpendolino
+  tags:
+    - aur
+    - sway
+
+- name: Install wlroots-git
+  aur:
+    name: wlroots-git
+    use: yay
+  become: yes
+  become_user: dpendolino
+  tags:
+    - aur
+    - sway
+
+- name: Install sway related apps
+  aur:
+    name:
+      - copyq
+      - swayb
+      - swayidle
+      - swaylock
+      - i3status-rust-git
+    use: yay
+  become: yes
+  become_user: dpendolino
+  tags:
+    - aur
+    - sway
