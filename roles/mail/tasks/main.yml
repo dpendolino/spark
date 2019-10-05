@@ -27,7 +27,7 @@
     - firejail
 
 - name: Install urlview
-  aur: name=urlview
+  aur: name=urlview-git
   become: yes
   become_user: "{{ user.name }}"
   tags:
