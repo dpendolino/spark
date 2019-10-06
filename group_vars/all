@@ -604,7 +604,6 @@ packages:
   - rsync
   - ruby-rails
   - ruby-rdoc
-  - rustup
   - s-nail
   - screenfetch
   - seahorse
