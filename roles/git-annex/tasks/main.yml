@@ -42,14 +42,14 @@
     dest: /etc/nmtrust/trusted_units
     state: present
     line: "git-annex.service,user:{{ user.name }},allow_offline"
-  when: gitannex.stop_on_untrusted is defined and gitannex.stop_on_untrusted == True
+  when: gitannex.stop_on_untrusted is defined and gitannex.stop_on_untrusted
 
 - name: Remove git-annex from trusted unit list
   lineinfile:
     dest: /etc/nmtrust/trusted_units
     state: absent
     line: "git-annex.service,user:{{ user.name }},allow_offline"
-  when: gitannex.stop_on_untrusted is not defined or gitannex.stop_on_untrusted != True
+  when: gitannex.stop_on_untrusted is not defined or not gitannex.stop_on_untrusted
 
 - name: Increase the amount of inotify watchers
   copy:
