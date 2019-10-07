@@ -1,0 +1,14 @@
+---
+- name: Copy locale.gen
+  copy:
+    src: files/locale.gen
+    dest: /etc/locale.gen
+
+- name: copy locale.conf
+  copy:
+    src: files/locale.conf
+    dest: /etc/locale.conf
+
+- name: run locale-gen
+  shell:
+    name: locale-gen
