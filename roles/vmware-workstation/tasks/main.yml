@@ -1,0 +1,10 @@
+---
+- name: Install vmware-workstation
+  aur:
+    name: vmware-workstation
+    use: yay
+  become: yes
+  become_user: dpendolino
+  tags:
+    - aur
+    - vmware-workstation
