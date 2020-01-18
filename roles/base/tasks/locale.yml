@@ -11,4 +11,4 @@
 
 - name: run locale-gen
   shell:
-    name: locale-gen
+    cmd: locale-gen
