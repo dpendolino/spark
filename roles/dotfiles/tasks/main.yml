@@ -6,7 +6,7 @@
     accept_hostkey: yes
     update: no
     key_file: "/home/{{ user.name }}/.ssh/id_rsa"
-    version: "{{ hostname | default('master') }}"
+    version: "{{ dotfiles.branch }}"
   when: dotfiles is defined
   become: yes
   become_user: "{{ user.name }}"

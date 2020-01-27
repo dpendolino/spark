@@ -13,6 +13,7 @@ hostname: archlinux
 dotfiles:
     url: git@github.com:dpendolino/dotfiles.git
     destination: .dotfiles
+    branch: master
 
 aur:
     dir: aur
