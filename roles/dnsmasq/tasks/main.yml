@@ -2,36 +2,17 @@
 - name: Install Dnsmasq
   pacman: name=dnsmasq state=present
 
+- name: Configure resolvconf to use dnsmasq
+  template: src=resolvconf.conf.j2 dest=/etc/resolvconf.conf
+
+- name: Run update resolvconf
+  shell:
+    cmd: resolvconf -u
+
 - name: Copy dnsmasq configuration file
   template: src=dnsmasq.conf.j2 dest=/etc/dnsmasq.conf
   notify:
     - restart dnsmasq
 
-- name: Create dnsmasq systemd unit file directory
-  file: path=/etc/systemd/system/dnsmasq.service.d state=directory
-  tags:
-    - firejail
-
-- name: Push dnsmasq socket unit file
-  copy: src=dnsmasq-service-override.conf dest=/etc/systemd/system/dnsmasq.service.d/override.conf
-  notify:
-    - reload systemd config
-    - restart dnsmasq
-  tags:
-    - firejail
-
-- name: Remove dnsmasq systemd unit PID file line
-  lineinfile: dest=/usr/lib/systemd/system/dnsmasq.service
-              state=absent
-              line="PIDFile=/run/dnsmasq.pid"
-  notify:
-    - reload systemd config
-    - restart dnsmasq
-  tags:
-    - firejail
-
 - name: Enable and start dnsmasq
   service: name=dnsmasq.service enabled=yes state=started
-
-- name: Configure resolvconf to use dnsmasq
-  template: src=resolvconf.conf.j2 dest=/etc/resolvconf.conf
