@@ -15,6 +15,11 @@
       dest: /etc/NetworkManager/conf.d/20-connectivity.conf
   when: network.conn_check is defined
 
+- name: Push rc-manager.conf
+  copy:
+      src: rc-manager.conf
+      dest: /etc/NetworkManager/conf.d/rc-manager.conf
+
 - name: Enable and start NetworkManager
   service:
       name: NetworkManager.service
