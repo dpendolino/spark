@@ -20,9 +20,9 @@
       - i3blocks
       - i3lock
       - i3status
-      - i3-layout-manager-git
-      - i3-workspace-groups
-      - i3-workspace-names
+      # - i3-layout-manager-git
+      # - i3-workspace-groups
+      # - i3-workspace-names
     use: yay
   become: yes
   become_user: dpendolino
