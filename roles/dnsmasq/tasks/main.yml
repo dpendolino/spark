@@ -2,11 +2,8 @@
 - name: Install Dnsmasq
   pacman: name=dnsmasq state=present
 
-- name: Download root hints
-  get_url: url=https://www.internic.net/domain/named.cache dest=/etc/dnsmasq/root.hints force=yes
-
 - name: Copy dnsmasq configuration file
-  template: src=dnsmasq.conf.j2 dest=/etc/dnsmasq/dnsmasq.conf
+  template: src=dnsmasq.conf.j2 dest=/etc/dnsmasq.conf
   notify:
     - restart dnsmasq
 
