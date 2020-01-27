@@ -296,7 +296,7 @@ aur_fonts:
     - ttf-oswald
     - ttf-quintessential
     - ttf-signika
-    - ttf-symbola
+    # - ttf-symbola - uncomment after march 2020
 
 syncthing:
     run_on: trusted
@@ -304,7 +304,7 @@ syncthing:
 mirrorlist:
   run_on: trusted
 
-kernel_parameters: "quiet consoleblank=60 i915.enable_psr=2"
+kernel_parameters: "quiet consoleblank=60 i915.enable_psr=2 net.ifnames=0"
 
 packages:
   - accountsservice
