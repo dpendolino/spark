@@ -612,7 +612,7 @@ packages:
   - shadow
   - shellcheck
   - shotwell
-  - signal-desktop-bin
+  - signal-desktop
   - slack-desktop
   - slacktee-git
   - smartmontools
