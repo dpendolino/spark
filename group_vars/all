@@ -344,6 +344,7 @@ packages:
   - buku
   - buku_run-git
   - burpsuite
+  - burpsuite
   - bzip2
   - bzr
   - calibre
@@ -387,6 +388,7 @@ packages:
   - eslint
   - evince
   - exfat-utils
+  - expac
   - f2fs-tools
   - fakeroot
   - fasd
@@ -439,6 +441,7 @@ packages:
   - gnome-weather
   - google-chrome
   - google-cloud-sdk
+  - google-cloud-sdk
   - gparted
   - gpaste
   - grep
@@ -451,8 +454,8 @@ packages:
   - gst-plugins-good
   - gst-plugins-ugly
   - gstreamer-vaapi
-  - gtkmm
   - gtk2
+  - gtkmm
   - gulp
   - gvfs-google
   - gvfs-gphoto2
@@ -544,6 +547,9 @@ packages:
   - nvme-cli
   - openssh
   - os-prober
+  - packer
+  - pacman-contrib
+  - pacutils
   - pandoc
   - pandoc-citeproc
   - pandoc-crossref
@@ -594,6 +600,7 @@ packages:
   - python-vdf
   - qt5-styleplugins
   - qt5ct
+  - qutebrowser
   - rdesktop
   - redis-desktop-manager
   - redshift
@@ -613,6 +620,8 @@ packages:
   - shellcheck
   - shotwell
   - signal-desktop
+  - signal-desktop
+  - slack-desktop
   - slack-desktop
   - slacktee-git
   - smartmontools
@@ -676,9 +685,9 @@ packages:
   - xf86-input-libinput
   - xf86-video-fbdev
   - xf86-video-vesa
-  - xorg-drivers
   - xfsprogs
   - xorg-bdftopcf
+  - xorg-drivers
   - xorg-font-util
   - xorg-fonts-encodings
   - xorg-iceauth
