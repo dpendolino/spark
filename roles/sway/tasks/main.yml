@@ -23,7 +23,7 @@
   aur:
     name:
       - copyq
-      - swayb
+      - swaybg-git
       - swayidle
       - swaylock
       - i3status-rust-git
