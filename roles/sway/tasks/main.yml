@@ -27,6 +27,7 @@
       - swayidle
       - swaylock
       - i3status-rust-git
+      - mako
     use: yay
   become: yes
   become_user: dpendolino
