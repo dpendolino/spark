@@ -38,7 +38,7 @@
     - { role: mpd, tags: ['mpd'] }
     - { role: mpv, tags: ['mpv'] }
     - { role: pianobar, tags: ['pianobar'] }
-    - { role: laptop, tags: ['laptop'] }
+    - { role: laptop, tags: ['laptop'], when: "laptop is defined" }
     - { role: thinkpad, tags: ['thinkpad'], when: "'ThinkPad' in ansible_product_version" }
     - { role: macbook, tags: ['macbook'], when: "'MacBook' in ansible_product_name" }
     - { role: screensaver, tags: ['screensaver'] }
@@ -65,7 +65,7 @@
     - { role: mapping, tags: ['mapping'] }
     - { role: sound, tags: ['sound'] }
     - { role: pim, tags: ['pim'] }
-    - { role: radio, tags: ['radio'] }
+    - { role: radio, tags: ['radio'], when: "radio is defined"}
     - { role: postgresql, tags: ['postgresql'] }
     - { role: calibre, tags: ['calibre'] }
     - { role: aws, tags: ['aws'] }
@@ -81,6 +81,7 @@
     - { role: mirrorlist, tags: ['mirrorlist'], when: "mirrorlist is defined" }
     - { role: logitech, tags: ['logitech'] }
     - { role: packages, tags: ['packages'] }
+    - { role: sway, tags: ['sway'] }
   vars_prompt:
     - name: user_password
       prompt: "Enter desired user password"
