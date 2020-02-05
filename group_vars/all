@@ -323,6 +323,7 @@ packages:
   - atop
   - autoconf
   - automake
+  - autopep8
   - avr-binutils
   - avr-gcc
   - avr-libc
@@ -482,6 +483,7 @@ packages:
   - jdupes
   - jfsutils
   - jnettop
+  - joplin
   - keepassxc
   - kubectl
   - less
@@ -524,7 +526,6 @@ packages:
   - nano
   - nautilus
   - ncdu
-  - neovim
   - net-tools
   - netctl
   - network-manager-applet
@@ -537,6 +538,7 @@ packages:
   - nilfs-utils
   - nmap
   - nodejs
+  - notekit-git
   - noto-fonts
   - noto-fonts-cjk
   - noto-fonts-emoji
